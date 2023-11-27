@@ -1,0 +1,36 @@
+<!-- * CSS 선택자 우선순위* -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 선택자 우선순위 </title>
+    <style>
+        /* 태그선택자 : 나중에 적용한게 전에 적용한걸 덮어서 적용됨 */
+        h1 { background-color: antiquewhite; color: blueviolet; }
+        h1 { background-color: aquamarine; }
+
+        /* 아이디선택자 : 클래스와 태그선택자 보다는 우선순위 높음 */
+        #id1 { background-color: cadetblue; }
+
+        /* 클래스선택자 : back속성은 아이디선택자에서 적용됐으므로 적용x, 적용안된 color만 적용 */
+        .class1 { background-color: darkslategray; color: white; }
+
+        /* 태그연산자 : !important를 적용함으로써 우선순위가 제일 높아짐 */
+        div { background-color: lightsteelblue !important; 
+              color: black; 
+              width: 200px; 
+              height: 200px; }
+    </style>
+</head>
+<body>
+    <h1> 선택자 우선순위 </h1>
+    <p>
+        - 기본적으로 CSS는 위에서부터 아래로 적용됨 <br>
+        - 동일한 요소를 다양한 선택자로 CSS가 부여된 경우 우선순위에 따라 적용됨 <br>
+        - 순위 : !important -> 인라인스타일방식 -> 아이디선택자 -> 클래스선택자 -> 태그선택자
+    </p>
+    <!-- 인라인스타일방식 -->
+    <div id="id1" class="class1" style="background-color: cornflowerblue;"> 우선순위테스트 </div>
+</body>
+</html>

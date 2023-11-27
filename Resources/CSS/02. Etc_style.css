@@ -1,0 +1,113 @@
+/* CSS 영역 */
+h2 { color:darkgreen; }
+
+
+/* ========== 1. 속성 선택자 ==========  */
+/* div요소들 중 name 속성값이 name1과 "일치"하는 요소 */
+ div[name=name1] { background-color: yellow; }
+
+/* div요소들 중 name 속성값이 name1이 포함되어 있는 요소(단어단위_공백으로 구분) */
+ div[name~=name1] { color: dodgerblue; }
+
+/* div요소들 중 class 속성값이 class로 "시작"하는 요소(단어 -로 구분) */
+div[class|=class] { background-color: aquamarine; }
+
+/* div요소들 중 name 속성값이 na로 "시작"하는 요소 */
+div[name^=na] { font-size: 20px; }
+
+/* div요소들 중 class가 ss로 "끝"나는 요소 */
+div[class$=ss] { background-color: coral; }
+
+/* div요소들 중 class속성값이 i가 "포함"되어있는 요소 */
+div[class*=i] { background-color: blueviolet; }
+
+/* div요소들 중 class속성값이 div-class인 요소들 중에서 name속성값이 name3이 포함된 요소 */
+.div-class[name~=name3] { background-color: cornflowerblue; }
+
+
+/* ========== 2. 자손 / 후손 선택자 ==========  */
+/* a > b : a요소의 자손들 중에서 b요소만 선택 */
+/* 하위 요소들 모두 */
+/* #test1 > * { background-color: aquamarine; } */
+
+/* id가 test1인 요소의 자손들 중 h4 요소만 선택 */
+#test1 > h4 { background-color: lightseagreen; }
+
+/* id가 test1인 ul의 자손인 li 모두 */
+#test1 > ul > li { background-color: mediumslateblue; }
+
+/* a b : a요소의 후손(모든 하위요소)들 중에서 b요소만 선택 */
+/* id가 test1인 li 모두 */
+#test1 li { color: blue; }
+
+
+/* ========== 3. 동위 선택자 ==========  */
+/* id가 test2인 div 태그 바로 뒤에 오는 요소만 */
+/* a요소 뒤에 있는 b요소 "하나만" 선택 */
+#test2 + div { background-color: yellow; }
+
+/* 선택 x : 바로 뒤에 나오는 요소가 아니기 때문에 */
+#test2 + ul { background-color: bisque; }
+
+
+/* a요소 뒤에 있는 "모든" b요소 선택 */
+#test2 ~ ul { background-color: bisque; }
+#test2 ~ div { color: darkgoldenrod; }
+
+
+/* ========== 4. 반응 선택자 ==========  */
+.area {
+    background-color: aquamarine;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#active-test:active {
+    background-color: cadetblue;
+    color: darkgray;
+}
+
+#hover-test:hover {
+    background-color: mediumpurple;
+    color: blueviolet;
+    background: linear-gradient(mediumpurple , cadetblue);
+    background-size: 600% 600%;    
+    animation: ani 10s;
+}
+@keyframes ani {
+    0% {
+        background-position: 0 0 ;
+    }
+    100% {
+        background-position: 600% 600%;
+    }
+}
+
+/* ========== 5. 상태 선택자 ==========  */
+/* checkbox가 선택되었을때 체크박스 크기 조절*/
+input[type=checkbox]:checked {
+    width: 30px;
+    height: 30px;
+}
+
+/* checkbox가 선택되었을때 체크박스 크기 조절 + 이름 조절 */
+input[type=checkbox]:checked + label {
+    font-size: 30px;
+}
+
+/* name이 user로 시작되는 요소를 초점을 맞췄을 때 배경색 조절 */
+input[name^=user]:focus {
+    background-color: rgb(180, 237, 241);
+}
+
+/* button이 활성화 되어있을 때 배경색 */
+button:enabled {
+    background-color: aqua;
+}
+
+/* button이 비활성화 되어있을 때 배경색 */
+button:disabled {
+    background-color: darkgrey;
+}
