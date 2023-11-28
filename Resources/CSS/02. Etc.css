@@ -6,11 +6,11 @@ h2 { color:darkgreen; }
 /* div요소들 중 name 속성값이 name1과 "일치"하는 요소 */
  div[name=name1] { background-color: yellow; }
 
-/* div요소들 중 name 속성값이 name1이 포함되어 있는 요소(단어단위_공백으로 구분) */
+/* div요소들 중 name 속성값이 name1이 포함되어 있는 요소(단어단위 공백으로 구분) */
  div[name~=name1] { color: dodgerblue; }
 
 /* div요소들 중 class 속성값이 class로 "시작"하는 요소(단어 -로 구분) */
-div[class|=class] { background-color: aquamarine; }
+div[class|=class] { background-color: rgb(30, 175, 127); }
 
 /* div요소들 중 name 속성값이 na로 "시작"하는 요소 */
 div[name^=na] { font-size: 20px; }

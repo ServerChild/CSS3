@@ -1,0 +1,46 @@
+/* 클래스 test style */
+.test {
+    background-color: lightsteelblue;
+    width: 100px;
+    height: 100px;
+    border: 10px solid;
+    border-width: 2px;
+}
+
+
+/* === padding === */
+#test1 { padding: 100px; } /* 모든(상하좌우) 여백 */
+
+#test2 { 
+    padding-top: 100px; /* 위쪽 여백 */
+    padding-right: 20px; /* 오른쪽 여백 */
+    padding-bottom: 30px; /* 아래쪽 여백 */
+    padding-left: 10px; /* 왼쪽 여백 */
+}
+
+/*
+    값1 : 모든_상하좌우
+    값1  값2 : 상하  좌우
+    값1  값2  값3 : 상  좌우  하
+    값1  값2  값3  값4 : 위쪽  오른쪽  아래쪽  왼쪽(위쪽부터 시계방향으로)
+*/
+#test3 {
+    padding: 100px 20px 30px 10px;
+}
+
+
+/* === margin === */
+#test4 { margin: 50px; } /* 모든(상하좌우) 간격 */
+
+#test5 {
+    margin-bottom: 50px; /* 아래 간격 */
+    margin-left: 20px; /* 왼쪽 간격 */
+}
+
+#test6 {
+    width: 200px;
+    height: 200px;
+    margin: 80px; /* 모든(상하좌우) 간격 */
+    margin: 30px 50px 80px 100px; /* 위쪽부터 시계방향으로 */
+    margin: auto; /* 자동으로 간격 조절(좌우 기준으로 가운데 배치) */
+}

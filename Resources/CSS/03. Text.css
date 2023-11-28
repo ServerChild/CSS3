@@ -32,7 +32,7 @@
 #ts1 { 
     color: #3DB7CC; 
     text-shadow: 5px 5px #B2EBF4;
-    text-shadow: -5px -5px 5px #B2EBF4; 
+    text-shadow: -5px -5px 2px #B2EBF4;
 }
 
 #ts2 { 
@@ -40,3 +40,27 @@
     text-shadow: 0 0 10px black;
     text-shadow: 0 0 10px #00D8FF;
 }
+
+#ts3 {
+    text-shadow: 0 0 2px gray,
+                 0 -5px 4px yellow,
+                 0 -10px 8px orange,
+                 0 -15px 10px orangered,
+                 0 -20px 12px red;
+}
+
+
+/* === text-align === */
+#justify { text-align: justify; }
+
+#right { text-align: right; }
+
+#center { text-align: center; }
+
+
+/* === line-height === */
+#px { line-height: 30px; }
+
+#em { line-height: 3em; }
+
+#p { line-height:200%; }
