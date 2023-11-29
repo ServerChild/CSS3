@@ -1,0 +1,35 @@
+/* 테이블 전체 */
+table {
+    border: 1px solid;
+
+    /* 기본값 */
+    border-collapse: separate;
+    border-spacing: 20px 10px;
+    border-collapse: collapse;
+
+    width: 450px;
+    table-layout: fixed;
+}
+
+
+thead, tfoot { background-color: darkgray; }
+
+tbody { background-color: gainsboro; }
+
+
+th, td {
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    text-align: center;
+    vertical-align: bottom; /* 테이블에서만 사용가능. top|middle(기본값)|bottom */
+    border: 1px dashed white;
+
+    /* 글자에 공백이 없어도 중간에 끊어서 내림 */
+    word-break: break-all;
+}
+
+
+.borderTop {
+    border-top: 5px solid ;
+}
