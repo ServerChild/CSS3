@@ -1,0 +1,81 @@
+/* body */
+body { width: 100%; }
+
+
+/* header */
+header {
+    height: 300px;
+    width: 100%;
+}
+#logo {
+    margin-top: 5px;
+    display: flex; /* display: block도 가능 */
+    justify-content: center;
+}
+#login {
+    /* text-align: center; -> 창 크기 조절 시 같이 움직임 x */
+    display: block; /* 창 크기를 좌우로 조절 시 같이 움직임 o */
+    margin-top: 15px;
+    margin-left: 35%;
+}
+#titleImg {
+    /* height: 260px;  width: 100% */
+    margin-top: 10px;
+    clear: both;
+    height: 262px;
+    width: 100%;
+}
+
+
+/* nav */
+.navi { 
+    margin-top: 40px;
+    width: 1000px; 
+    height: 50px; 
+    background-color: #C2E2E8
+}
+.navi>a {
+    display: inline-block; 
+    width: 246px; 
+    color: black; 
+    text-align: center;
+    line-height: 60px;
+}
+.navi>a:hover { color: cadetblue; }
+.navi>a:active { color: cadetblue; }
+
+
+/* 본문 */
+section {
+    text-align: justify;
+    margin-left: 180px;
+    line-height: 40px;
+}
+
+section>h3 { font-weight: border; }
+
+article>h4 { color: #8CACB2; }
+
+
+/* side */
+aside {
+    width: 170px;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* footer */
+footer {
+    width: 950px;
+    height: 120px;
+    margin-top: 10px;
+    background-color: #C2E2E8;
+}
+footer p {
+    color: black;
+    line-height: 40px;
+    font-size: 13px;
+    text-align: center;
+}

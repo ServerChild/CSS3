@@ -1,0 +1,71 @@
+/* body */
+body { width: 100%; }
+
+
+/* header */
+header { text-align: center; }
+#logo {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+#login {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#titleImg {
+    display: none;
+}
+
+
+/* nav */
+.navi {
+    width: 800px; 
+    height: 200px;
+    background-color: #C2E2E8
+}
+.navi a {
+    display: block;
+    text-align: center;
+    color: black; 
+    line-height: 50px;
+    border-bottom: 1px solid white;
+}
+.navi>a:hover { color: cadetblue; }
+.navi>a:active { color: cadetblue; }
+
+
+/* 본문 */
+section {
+    text-align: justify;
+    margin-left: 180px;
+    line-height: 40px;
+}
+
+section>h3 { font-weight: border; }
+
+article>h4 { color: #8CACB2; }
+
+
+/* side */
+aside img {
+    display: block;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+
+/* footer */
+footer {
+    width: 950px;
+    height: 120px;
+    margin-top: 10px;
+    background-color: #C2E2E8;
+}
+footer p {
+    color: black;
+    line-height: 40px;
+    font-size: 13px;
+    text-align: center;
+}
