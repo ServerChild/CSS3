@@ -38,6 +38,7 @@ header { text-align: center; }
 
 /* 본문 */
 section {
+    display: block;
     text-align: justify;
     margin-left: 180px;
     line-height: 40px;
@@ -50,8 +51,10 @@ article>h4 { color: #8CACB2; }
 
 /* side */
 aside img {
-    display: block;
+    display: flex;
+    justify-content: center;
     height: 300px;
+    margin-left: 190px;
     margin-bottom: 10px;
 }
 
